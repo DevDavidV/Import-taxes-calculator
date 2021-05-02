@@ -11,7 +11,6 @@
 
 .slide{
     height: 100%;
-    max-height: 1080px;
 }
 
 #first-slide{
@@ -206,6 +205,7 @@
 
     .centered-box{
         height: 90%;
+        max-height: 800px;
         width: 80%;
         flex-direction: column;
     }
