@@ -1,0 +1,68 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+        href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <main>
+        <div id="first-slide" class="slide">
+            <h1>KAUKULAČKA COLNÉHO DLHU</h1>
+            <p>
+                Nástroj na uľahčenie orientačného výpočtu CLO a DPH
+                pri dovoze elektroniky z krajín, ktoré nie sú členom
+                colnej únie EU.
+            </p>
+        </div>
+        <div class="devide-line"></div>
+        <div id="second-slide" class="slide">
+            <div id="calculator" class="centered-box">
+                <div class="box-left-side" id="side-price">
+                    <p id="final-price">0.00€</p>
+                    <P id="dph-price">Z toho DPH: 0.00€</P>
+                    <p id="clo-price">Z toho CLO: 0.00€</p>
+                </div>
+                <div class="box-right-side" id="side-form">
+                    <h2>KAUKULAČKA</h2>
+                    <form id="calculator-form" action="#">
+                        <label id="product-price" for="product-price-input">Cena produktu:</label>
+                        <input type="text" id="product-price-input" placeholder="0.00" autocomplete="off" maxlength="12">
+                        <label id="others-price" for="others-price-input">Cena dopravy, poistenia, iné</label>
+                        <input type="text" id="others-price-input" placeholder="0.00" autocomplete="off" maxlength="12">
+                    </form>
+                    <h4>Vyberte druh elektroniky</h4>
+                    <div id="sellection-of-goods">
+                        <div id="smartphone-wrapper">
+                            <span class="material-icons-outlined">smartphone</span>
+                            <p>Smartphone</p>
+                        </div>
+                        <div id="bt-headset-wrapper">
+                            <span class="material-icons-outlined">headphones</span>
+                            <p>Bluetooth <br> slúchadlá</p>
+                        </div>
+                        <div id="car-radio-wrapper">
+                            <span class="material-icons-outlined">directions_car</span>
+                            <p>Autorádio</p>
+                        </div>
+                        <div id="pc-wrapper">
+                            <span class="material-icons-outlined">computer</span>
+                            <p>Notebook</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
